@@ -1,6 +1,6 @@
 /* @pjs preload="wallpaper.jpg"; */
 
-import de.bezier.guido.*;
+//import de.bezier.guido.*;
 
 int num_tracks;
 float sample_rate;
