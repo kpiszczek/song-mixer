@@ -180,6 +180,11 @@ function Maxim(t) {
       }
     }
     audio.getPowerSpectrum = function() {
+      if (analysing==true && playing) {
+        gainNode.connect(analyser);
+        FFTData = new Float32Array(analyser.frequencyBinCount);
+        analyser.getFloatFrequencyData(FFTData);
+      }
       if (source) {
         return FFTData;
       }

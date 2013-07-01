@@ -7,9 +7,6 @@ AudioPlayer [] loadTracks(Maxim maxim, String stub, String extension, int numIma
     AudioPlayer track = maxim.loadFile(stub+i+extension, sample_rate);
     if(track != null)
     {
-      track.setLooping(true);
-      track.setAnalysing(true);
-      track.cue(0);
       tracks = (AudioPlayer [])append(tracks,track);
     }
     else
