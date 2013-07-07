@@ -111,7 +111,7 @@ void draw(){
   
   for (int i = 0; i < num_tracks; i++){
     players[i].volume(volume_sliders[i].value);
-    players[i].speed(map(speed_slider.value, 0, 1, 0.4, 0.6));
+    players[i].speed(map(speed_slider.value, 0, 1, 0.8, 1.2));
   
     if (players[i].isPlaying()) {
       if (filter_checks[i].checked){
